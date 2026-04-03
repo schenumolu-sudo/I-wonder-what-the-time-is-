@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> I wonder what the time is???????? </title>
+        <style>
+            body{
+    background-color: skyblue;
+}
+button{
+    background-color: teal;
+    color: white;
+    padding: 10px 15px;
+    margin-top: 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
+
+        </style>
+    </head>
+    <body>
+        <center>
+        <h1 id="ans"> I wonder what the time is?? </h1>
+        <img alt="wonder" src="https://media.tenor.co/images/046c5cfdfb264975a4ed2bb10f71d778/tenor.gif" id="imageee">
+        <button onclick="checkTime()"> Check </button>
+        </center>
+        <script>
+            function checkTime(){
+                document.getElementById("ans").innerHTML = new Date();
+                document.getElementById("imageee").src = "https://media1.tenor.com/m/xc0WcRszhlgAAAAC/ooh-despicable-me-4.gif";
+                document.getElementById("ans").style.color = "teal";
+            }
+        </script>
+    </body>
+</html>
